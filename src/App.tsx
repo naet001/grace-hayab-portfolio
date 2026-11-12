@@ -1,19 +1,29 @@
-import { Button } from "@/components/ui/button"
+import { Achievements } from "@/components/Achievements"
+import { Bio } from "@/components/Bio"
+import { Contact } from "@/components/Contact"
+import { Footer } from "@/components/Footer"
+import { Header } from "@/components/Header"
+import { Hero } from "@/components/Hero"
+import { ImageCarousel } from "@/components/ImageCarousel"
+import { Pricing } from "@/components/Pricing"
+import { Reviews } from "@/components/Reviews"
+import { Services } from "@/components/Services"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div className="min-h-svh bg-white text-black">
+      <Header />
+      <main>
+        <Hero />
+        <Bio />
+        <ImageCarousel />
+        <Services />
+        <Achievements />
+        <Reviews />
+        <Pricing />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   )
 }
