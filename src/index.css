@@ -467,19 +467,105 @@
 }
 
 .editorial-pricing {
-  max-width: 58rem;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding-block: 1.5rem 2rem;
 }
 
-.editorial-price {
+.editorial-pricing-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.editorial-pricing-summary {
+  max-width: 32rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+
+.editorial-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.editorial-pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--background) 88%, var(--muted) 12%);
+  padding: 1.5rem;
+}
+
+.editorial-pricing-card.featured {
+  border-color: var(--brand-blue);
+  background: color-mix(in srgb, var(--background) 86%, var(--brand-blue) 14%);
+}
+
+.editorial-plan-badge {
+  align-self: flex-start;
+  border: 1px solid var(--brand-blue);
+  color: var(--brand-blue);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.editorial-plan-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.editorial-plan-name {
+  color: var(--foreground);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.editorial-plan-price {
   color: var(--foreground);
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
   font-weight: 600;
-  letter-spacing: -0.07em;
-  line-height: 1;
+  letter-spacing: -0.08em;
+  line-height: 0.95;
+}
+
+.editorial-plan-description {
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+
+.editorial-plan-features {
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+  padding: 0;
+  margin: 0;
+  color: var(--foreground);
+}
+
+.editorial-plan-features li {
+  position: relative;
+  padding-left: 1.2rem;
+  line-height: 1.5;
+}
+
+.editorial-plan-features li::before {
+  content: "\u00b7";
+  position: absolute;
+  left: 0;
+  color: var(--brand-blue);
 }
 
 .editorial-pricing-link {
@@ -490,6 +576,7 @@
   color: var(--link);
   font-size: 0.78rem;
   font-weight: 600;
+  margin-top: auto;
   transition: color 160ms ease;
 }
 
@@ -518,6 +605,10 @@
 @media (max-width: 48rem) {
   .editorial-header-inner {
     align-items: center;
+  }
+
+  .editorial-pricing-grid {
+    grid-template-columns: 1fr;
   }
 
   .editorial-navigation {
