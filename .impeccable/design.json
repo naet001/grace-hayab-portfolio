@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T11:08:46.326Z",
+  "title": "Design System: Grace Hayab",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Signal Blue",
+        "canonical": "#0077b6",
+        "tonalRamp": [
+          "oklch(15% 0.131 242.68)",
+          "oklch(25% 0.131 242.68)",
+          "oklch(35% 0.131 242.68)",
+          "oklch(45% 0.131 242.68)",
+          "oklch(55% 0.131 242.68)",
+          "oklch(65% 0.131 242.68)",
+          "oklch(75% 0.131 242.68)",
+          "oklch(95% 0.131 242.68)"
+        ]
+      },
+      "link-dark": {
+        "role": "primary",
+        "displayName": "Bright Blue",
+        "canonical": "#168fc9",
+        "tonalRamp": [
+          "oklch(15% 0.130 237.24)",
+          "oklch(25% 0.130 237.24)",
+          "oklch(35% 0.130 237.24)",
+          "oklch(45% 0.130 237.24)",
+          "oklch(55% 0.130 237.24)",
+          "oklch(65% 0.130 237.24)",
+          "oklch(75% 0.130 237.24)",
+          "oklch(95% 0.130 237.24)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(75% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink Black",
+        "canonical": "#0a0a0a",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(75% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "#090b0e",
+        "tonalRamp": [
+          "oklch(15% 0.007 258.04)",
+          "oklch(25% 0.007 258.04)",
+          "oklch(35% 0.007 258.04)",
+          "oklch(45% 0.007 258.04)",
+          "oklch(55% 0.007 258.04)",
+          "oklch(65% 0.007 258.04)",
+          "oklch(75% 0.007 258.04)",
+          "oklch(95% 0.007 258.04)"
+        ]
+      },
+      "night-surface": {
+        "role": "neutral",
+        "displayName": "Night Surface",
+        "canonical": "#111820",
+        "tonalRamp": [
+          "oklch(15% 0.019 252.10)",
+          "oklch(25% 0.019 252.10)",
+          "oklch(35% 0.019 252.10)",
+          "oklch(45% 0.019 252.10)",
+          "oklch(55% 0.019 252.10)",
+          "oklch(65% 0.019 252.10)",
+          "oklch(75% 0.019 252.10)",
+          "oklch(95% 0.019 252.10)"
+        ]
+      },
+      "gallery-wash": {
+        "role": "neutral",
+        "displayName": "Blue Wash",
+        "canonical": "oklch(0.97 0.012 240)",
+        "tonalRamp": [
+          "oklch(15% 0.012 240)",
+          "oklch(25% 0.012 240)",
+          "oklch(35% 0.012 240)",
+          "oklch(45% 0.012 240)",
+          "oklch(55% 0.012 240)",
+          "oklch(65% 0.012 240)",
+          "oklch(75% 0.012 240)",
+          "oklch(95% 0.012 240)"
+        ]
+      },
+      "muted-foreground": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(0.45 0.01 240)",
+        "tonalRamp": [
+          "oklch(15% 0.01 240)",
+          "oklch(25% 0.01 240)",
+          "oklch(35% 0.01 240)",
+          "oklch(45% 0.01 240)",
+          "oklch(55% 0.01 240)",
+          "oklch(65% 0.01 240)",
+          "oklch(75% 0.01 240)",
+          "oklch(95% 0.01 240)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Newsreader Display",
+        "purpose": "Hero name and large section headings."
+      },
+      "body": {
+        "displayName": "Geist Variable",
+        "purpose": "Body copy, navigation, and interface labels."
+      },
+      "label": {
+        "displayName": "Tracked Utility Label",
+        "purpose": "Small uppercase navigation and metadata."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "editorial-link-transition",
+        "value": "180ms ease",
+        "purpose": "Color transition on the pricing action link."
+      },
+      {
+        "name": "image-carousel-scroll",
+        "value": "36s linear",
+        "purpose": "Continuous gallery motion, disabled for reduced motion and paused on hover or focus."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "768px"
+      },
+      {
+        "name": "compact",
+        "value": "544px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Pricing Action Link",
+      "kind": "custom",
+      "refersTo": "pricing-action",
+      "description": "Primary action link styled as a squared blue button.",
+      "html": "<a class=\"ds-pricing-link\" href=\"#\">VIEW PRICING DETAILS</a>",
+      "css": ".ds-pricing-link { display: inline-flex; min-height: 3.25rem; align-items: center; border: 1px solid var(--brand-blue); background: var(--brand-blue); padding: 0 1.35rem; color: #fff; font: 700 0.7rem/1.5 'Geist Variable', sans-serif; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background-color 180ms ease, color 180ms ease; } .ds-pricing-link:hover { background: var(--background); color: var(--link); } .ds-pricing-link:focus-visible { outline: 2px solid var(--brand-blue); outline-offset: 4px; }"
+    },
+    {
+      "name": "Masthead Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Compact uppercase links that wrap cleanly on narrow screens.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"#bio\">BIO</a><a href=\"#services\">SERVICES</a><a href=\"#contact\">CONTACT</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; } .ds-nav a { display: inline-flex; min-height: 2.75rem; align-items: center; color: var(--foreground); font: 600 0.7rem/1.5 'Geist Variable', sans-serif; letter-spacing: 0.12em; text-decoration: none; text-transform: uppercase; transition: color 180ms ease; } .ds-nav a:hover, .ds-nav a[aria-current='page'] { color: var(--link); } .ds-nav a:focus-visible { outline: 2px solid var(--brand-blue); outline-offset: 4px; }"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "section-heading",
+      "description": "Newsreader title, recurring geometric mark, and strong rule.",
+      "html": "<div class=\"ds-section-heading\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M2 2h20v7H9v13H2z\" fill=\"currentColor\"/><path d=\"M13 13h9v9h-9z\" fill=\"#0077b6\"/></svg><h2>Section heading</h2></div>",
+      "css": ".ds-section-heading { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); align-items: center; gap: 1.1rem; border-bottom: 2px solid var(--foreground); padding-bottom: 1.15rem; color: var(--foreground); } .ds-section-heading svg { width: 2rem; height: 2rem; } .ds-section-heading h2 { margin: 0; font: 540 clamp(2.25rem, 4.5vw, 4.5rem)/0.98 'Newsreader Variable', Georgia, serif; letter-spacing: -0.04em; }"
+    },
+    {
+      "name": "Hero Image Field",
+      "kind": "custom",
+      "refersTo": "hero-art",
+      "description": "Abstract geometric placeholder field, never a substitute for real portfolio imagery.",
+      "html": "<div class=\"ds-hero-art\" role=\"img\" aria-label=\"Hero image placeholder\"><span>IMAGE HERE</span></div>",
+      "css": ".ds-hero-art { position: relative; display: grid; min-height: 24rem; place-items: center; overflow: hidden; border: 1px solid var(--foreground); background: var(--brand-blue); } .ds-hero-art::before { position: absolute; top: -12%; right: -9%; width: 78%; aspect-ratio: 1; border: 1px solid rgb(255 255 255 / 62%); border-radius: 50%; content: ''; } .ds-hero-art span { position: relative; z-index: 1; display: grid; width: 58%; min-height: 55%; place-items: center; border: 1px solid var(--foreground); background: var(--background); color: var(--link); font: 700 0.7rem/1.5 'Geist Variable', sans-serif; letter-spacing: 0.16em; }"
+    },
+    {
+      "name": "Gallery Placeholder",
+      "kind": "custom",
+      "refersTo": "gallery-tile",
+      "description": "Wide, square-cornered tile for future approved portfolio imagery.",
+      "html": "<div class=\"ds-gallery-tile\" role=\"img\" aria-label=\"Portfolio image placeholder\">IMAGE HERE</div>",
+      "css": ".ds-gallery-tile { display: grid; aspect-ratio: 3 / 2; min-width: 18rem; place-items: center; border: 1px solid var(--border); background: var(--muted); color: var(--link); font: 700 0.7rem/1.5 'Geist Variable', sans-serif; letter-spacing: 0.16em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editorial Frame",
+    "overview": "The portfolio uses the pacing and clear hierarchy of a mid-century magazine: expressive display type, precise rules, open space, and one recurring frame-and-signal mark. White, ink black, and the specified blue carry the identity across both themes. The image fields remain explicitly marked placeholders until real portfolio material is supplied.",
+    "keyCharacteristics": [
+      "High-contrast Newsreader headlines paired with practical Geist text.",
+      "Square-edged geometry, thin rules, and a recurring black-and-blue mark.",
+      "Blue #0077b6 used as a focal color and as a single full-width contact section.",
+      "Placeholder portfolio material remains visibly unverified."
+    ],
+    "rules": [
+      {
+        "name": "The One Signal Rule",
+        "body": "Keep the confirmed blue as the sole saturated accent; use neutral surfaces to give it hierarchy.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Use Newsreader for display hierarchy and Geist for utility text; do not use the display face for dense copy.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rule-Not-Shadow Rule",
+        "body": "Use borders and surface changes for separation; do not add ambient shadows to editorial content.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use #0077b6 as the primary accent and preserve its high-contrast white pairing.",
+      "Do maintain the frame-and-signal mark, editorial rules, and deliberate negative space.",
+      "Do keep the mobile reading order and preserve reduced-motion support for the carousel.",
+      "Do leave current copy and imagery visibly provisional until approved replacements arrive."
+    ],
+    "donts": [
+      "Don't add extra saturated colors or gradients.",
+      "Don't introduce rounded card stacks or shadow-heavy containers.",
+      "Don't present placeholder clients, results, testimonials, pricing, or images as verified facts."
+    ]
+  }
+}

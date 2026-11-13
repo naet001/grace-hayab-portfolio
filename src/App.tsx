@@ -11,7 +11,7 @@ import { Services } from "@/components/Services"
 
 export function App() {
   return (
-    <div className="min-h-svh bg-white text-black">
+    <div className="portfolio-shell min-h-svh">
       <Header />
       <main>
         <Hero />

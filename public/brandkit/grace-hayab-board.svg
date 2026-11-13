@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" fill="none">
+  <defs>
+    <style>
+      .sans{font-family:Arial,Helvetica,sans-serif}
+      .serif{font-family:Georgia,'Times New Roman',serif}
+      .ink{fill:#0a0a0a}
+      .blue{fill:#0077b6}
+      .white{fill:#fff}
+      .label{font:600 11px Arial,Helvetica,sans-serif;letter-spacing:2px}
+      .micro{font:500 9px Arial,Helvetica,sans-serif;letter-spacing:1.2px}
+    </style>
+    <g id="mark">
+      <path d="M0 0h44v15H15v29H0z" fill="#0a0a0a"/>
+      <path d="M25 25h19v19H25z" fill="#0077b6"/>
+    </g>
+  </defs>
+  <rect width="1600" height="1200" fill="#14171a"/>
+  <text x="64" y="46" class="label white">GRACE HAYAB</text>
+  <text x="1536" y="46" text-anchor="end" class="micro white">IDENTITY SYSTEM / 01</text>
+
+  <g transform="translate(64 72)">
+    <rect width="472" height="310" fill="#fff"/>
+    <use href="#mark" transform="translate(36 38) scale(2.4)"/>
+    <text x="36" y="198" class="serif ink" font-size="46" letter-spacing="-2">Grace Hayab</text>
+    <path d="M36 222h400" stroke="#0a0a0a"/>
+    <text x="36" y="251" class="label blue">SOCIAL MEDIA MANAGER</text>
+    <text x="36" y="284" class="micro ink">WORDMARK / PRIMARY SIGNATURE</text>
+  </g>
+
+  <g transform="translate(552 72)">
+    <rect width="472" height="310" fill="#fff"/>
+    <text x="32" y="36" class="label ink">01 / THE MARK</text>
+    <path d="M50 72h220v170H50z" stroke="#0077b6" stroke-dasharray="4 5"/>
+    <path d="M50 157h220M160 72v170" stroke="#0077b6" stroke-dasharray="4 5"/>
+    <path d="M88 104h146v42h-104v94H88z" fill="#0a0a0a"/>
+    <path d="M171 187h63v53h-63z" fill="#0077b6"/>
+    <text x="302" y="118" class="label ink">FRAME</text>
+    <text x="302" y="141" class="micro ink">A flexible</text>
+    <text x="302" y="158" class="micro ink">content window</text>
+    <text x="302" y="199" class="label blue">SIGNAL</text>
+    <text x="302" y="222" class="micro ink">Blue anchors</text>
+    <text x="302" y="239" class="micro ink">the focal point</text>
+    <text x="32" y="282" class="micro ink">GEOMETRIC CONSTRUCTION / REPEATABLE AT ANY SCALE</text>
+  </g>
+
+  <g transform="translate(1040 72)">
+    <rect width="496" height="310" fill="#fff"/>
+    <rect x="22" y="22" width="452" height="266" stroke="#0a0a0a"/>
+    <rect x="22" y="22" width="452" height="32" fill="#0a0a0a"/>
+    <circle cx="40" cy="38" r="3" fill="#fff"/>
+    <circle cx="52" cy="38" r="3" fill="#fff"/>
+    <circle cx="64" cy="38" r="3" fill="#fff"/>
+    <text x="248" y="42" text-anchor="middle" class="micro white">GRACEHAYAB.COM</text>
+    <use href="#mark" transform="translate(42 76) scale(.72)"/>
+    <text x="80" y="101" class="serif ink" font-size="24">Grace Hayab</text>
+    <path d="M42 117h412" stroke="#0a0a0a"/>
+    <text x="42" y="149" class="label blue">SOCIAL MEDIA MANAGER</text>
+    <text x="42" y="190" class="serif ink" font-size="35">Grace Hayab</text>
+    <text x="42" y="215" class="micro ink">A short introduction goes here.</text>
+    <rect x="42" y="238" width="138" height="30" fill="#0077b6"/>
+    <text x="111" y="257" text-anchor="middle" class="micro white">CONTACT</text>
+    <rect x="329" y="134" width="125" height="134" fill="#0077b6"/>
+    <circle cx="433" cy="161" r="47" stroke="#fff"/>
+    <text x="391" y="216" text-anchor="middle" class="micro white">IMAGE HERE</text>
+  </g>
+
+  <g transform="translate(64 398)">
+    <rect width="472" height="310" fill="#0077b6"/>
+    <use href="#mark" transform="translate(34 34) scale(.8)"/>
+    <text x="34" y="132" class="serif white" font-size="43">A point of view.</text>
+    <text x="34" y="185" class="serif white" font-size="43" font-style="italic">A clear frame.</text>
+    <path d="M34 222h402" stroke="#fff"/>
+    <text x="34" y="254" class="label white">THE EDITORIAL IDEA</text>
+    <text x="34" y="282" class="micro white">BOLD HIERARCHY / ROOM TO BREATHE</text>
+  </g>
+
+  <g transform="translate(552 398)">
+    <rect width="472" height="310" fill="#fff"/>
+    <text x="32" y="38" class="label ink">02 / COLOR</text>
+    <rect x="32" y="62" width="124" height="114" fill="#0077b6"/>
+    <rect x="174" y="62" width="124" height="114" fill="#0a0a0a"/>
+    <rect x="316" y="62" width="124" height="114" fill="#fff" stroke="#0a0a0a"/>
+    <text x="32" y="202" class="label ink">SIGNAL BLUE</text>
+    <text x="32" y="222" class="micro ink">#0077B6 / FOCAL COLOR</text>
+    <text x="174" y="202" class="label ink">INK BLACK</text>
+    <text x="174" y="222" class="micro ink">#0A0A0A / STRUCTURE</text>
+    <text x="316" y="202" class="label ink">PAPER WHITE</text>
+    <text x="316" y="222" class="micro ink">#FFFFFF / OPEN SPACE</text>
+    <path d="M32 248h408" stroke="#0a0a0a"/>
+    <text x="32" y="277" class="micro ink">THREE COLORS / ONE CLEAR HIERARCHY</text>
+  </g>
+
+  <g transform="translate(1040 398)">
+    <rect width="496" height="310" fill="#fff"/>
+    <text x="32" y="38" class="label ink">03 / TYPOGRAPHY</text>
+    <text x="32" y="113" class="serif ink" font-size="58" letter-spacing="-2">Newsreader</text>
+    <text x="34" y="143" class="label blue">DISPLAY / EDITORIAL</text>
+    <path d="M32 164h432" stroke="#0a0a0a"/>
+    <text x="32" y="211" class="sans ink" font-size="25" font-weight="600">Geist Variable</text>
+    <text x="34" y="239" class="label blue">BODY / NAVIGATION / LABELS</text>
+    <text x="34" y="277" class="micro ink">CONTRAST THROUGH SCALE, NOT DECORATION</text>
+  </g>
+
+  <g transform="translate(64 724)">
+    <rect width="472" height="310" fill="#fff"/>
+    <text x="32" y="38" class="label ink">04 / STATIONERY</text>
+    <rect x="54" y="68" width="300" height="190" fill="#0a0a0a"/>
+    <path d="M74 90h54v18H92v36H74z" fill="#0077b6"/>
+    <text x="74" y="182" class="serif white" font-size="31">Grace Hayab</text>
+    <path d="M74 199h254" stroke="#fff"/>
+    <text x="74" y="225" class="micro white">SOCIAL MEDIA MANAGER</text>
+    <rect x="338" y="178" width="105" height="105" fill="#0077b6"/>
+    <text x="390" y="237" text-anchor="middle" class="label white">G H</text>
+    <text x="32" y="289" class="micro ink">CARD / MARK / BLUE EDGE</text>
+  </g>
+
+  <g transform="translate(552 724)">
+    <rect width="472" height="310" fill="#fff"/>
+    <text x="32" y="38" class="label ink">05 / IMAGE LANGUAGE</text>
+    <rect x="32" y="60" width="408" height="202" fill="#0077b6"/>
+    <path d="M32 211 187 90h253v172H32z" fill="#0a0a0a"/>
+    <circle cx="339" cy="132" r="70" fill="#fff"/>
+    <path d="M173 60h93v202h-93z" fill="#fff"/>
+    <path d="M32 60h408v202H32z" stroke="#0a0a0a"/>
+    <text x="32" y="291" class="micro ink">ABSTRACT GEOMETRY / NO STOCK PHOTOGRAPHY</text>
+  </g>
+
+  <g transform="translate(1040 724)">
+    <rect width="496" height="310" fill="#fff"/>
+    <text x="32" y="38" class="label ink">06 / COMPONENT LANGUAGE</text>
+    <path d="M32 68h432" stroke="#0a0a0a" stroke-width="2"/>
+    <text x="32" y="101" class="serif ink" font-size="26">Section heading</text>
+    <path d="M32 118h432" stroke="#0a0a0a"/>
+    <rect x="32" y="144" width="174" height="44" fill="#0077b6"/>
+    <text x="119" y="172" text-anchor="middle" class="label white">PRIMARY ACTION</text>
+    <rect x="222" y="144" width="174" height="44" stroke="#0077b6"/>
+    <text x="309" y="172" text-anchor="middle" class="label blue">TEXT LINK</text>
+    <path d="M32 213h432" stroke="#0a0a0a"/>
+    <use href="#mark" transform="translate(32 234) scale(.55)"/>
+    <text x="68" y="261" class="micro ink">EDITORIAL RULE / RECURRING MARK / CLEAR FOCUS</text>
+    <text x="32" y="290" class="micro ink">MOBILE: ONE COLUMN / SAME READING ORDER</text>
+  </g>
+
+  <path d="M64 1072h1472" stroke="#fff" stroke-opacity=".35"/>
+  <text x="64" y="1110" class="label white">GRACE HAYAB / SOCIAL MEDIA MANAGER</text>
+  <text x="1536" y="1110" text-anchor="end" class="micro white">WHITE / BLACK / #0077B6</text>
+</svg>

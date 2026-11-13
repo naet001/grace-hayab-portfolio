@@ -38,11 +38,11 @@ const groups = [
 export function Achievements() {
   return (
     <Section id="achievements" title="Achievements">
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="editorial-grid">
         {groups.map((group) => (
-          <article key={group.title} className="border border-black p-4">
-            <h3 className="mb-3 text-lg font-medium">{group.title}</h3>
-            <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed">
+          <article key={group.title} className="editorial-group">
+            <h3>{group.title}</h3>
+            <ul>
               {group.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}

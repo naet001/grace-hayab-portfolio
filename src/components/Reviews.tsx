@@ -7,7 +7,8 @@ const reviews = [
     name: "Participant Name",
   },
   {
-    quote: "Another placeholder testimonial highlighting a positive experience or outcome.",
+    quote:
+      "Another placeholder testimonial highlighting a positive experience or outcome.",
     name: "Customer Name",
   },
   {
@@ -20,11 +21,11 @@ const reviews = [
 export function Reviews() {
   return (
     <Section id="reviews" title="Reviews">
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="editorial-reviews">
         {reviews.map((review) => (
-          <figure key={review.name} className="border border-black p-4">
-            <blockquote className="text-sm leading-relaxed">“{review.quote}”</blockquote>
-            <figcaption className="mt-4 text-sm font-medium">— {review.name}</figcaption>
+          <figure key={review.name} className="editorial-review">
+            <blockquote>{review.quote}</blockquote>
+            <figcaption>{review.name}</figcaption>
           </figure>
         ))}
       </div>
