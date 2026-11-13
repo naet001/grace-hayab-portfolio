@@ -1,0 +1,137 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Grace Hayab" [ref=e6] [cursor=pointer]:
+        - /url: "#hero"
+      - generic [ref=e10]:
+        - button "Close menu" [expanded] [active] [ref=e139] [cursor=pointer]:
+          - generic [ref=e13]: Close
+        - navigation "Primary" [ref=e143]:
+          - list [ref=e144]:
+            - listitem [ref=e145]:
+              - link "Home" [ref=e146] [cursor=pointer]:
+                - /url: "#hero"
+            - listitem [ref=e147]:
+              - link "Bio" [ref=e148] [cursor=pointer]:
+                - /url: "#bio"
+            - listitem [ref=e149]:
+              - link "Services" [ref=e150] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e151]:
+              - link "Achievements" [ref=e152] [cursor=pointer]:
+                - /url: "#achievements"
+            - listitem [ref=e153]:
+              - link "Reviews" [ref=e154] [cursor=pointer]:
+                - /url: "#reviews"
+            - listitem [ref=e155]:
+              - link "Pricing" [ref=e156] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=e157]:
+              - link "Contact" [ref=e158] [cursor=pointer]:
+                - /url: "#contact"
+  - main [ref=e14]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Grace Hayab" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Social Media Manager
+        - paragraph [ref=e20]: A short introduction goes here. This is a placeholder hero section for a clear, minimal personal portfolio.
+      - figure "Hero image placeholder" [ref=e21]:
+        - generic [aria-hidden] [ref=e22]: Image here
+        - generic [ref=e23]: Portfolio · Grace Hayab
+    - generic [ref=e25]:
+      - heading "Bio" [level=2] [ref=e27]
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: This is a placeholder bio section. Add a brief overview of background, experience, and focus areas here. Keep it clear and concise for visitors.
+        - paragraph [ref=e30]: A second short paragraph can go here to describe values, approach, or the type of work being highlighted on this portfolio site.
+    - region "Portfolio image gallery" [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - img "Image placeholder 1" [ref=e34]: IMAGE HERE
+          - img "Image placeholder 2" [ref=e35]: IMAGE HERE
+          - img "Image placeholder 3" [ref=e36]: IMAGE HERE
+          - img "Image placeholder 4" [ref=e37]: IMAGE HERE
+        - generic [aria-hidden] [ref=e38]:
+          - generic [ref=e39]: IMAGE HERE
+          - generic [ref=e40]: IMAGE HERE
+          - generic [ref=e41]: IMAGE HERE
+          - generic [ref=e42]: IMAGE HERE
+    - generic [ref=e44]:
+      - heading "What I Do / Services" [level=2] [ref=e46]
+      - generic [ref=e48]:
+        - article [ref=e49]:
+          - img "Service image placeholder" [ref=e50]:
+            - generic [ref=e51]: Image here
+          - generic [ref=e52]:
+            - heading "Service One" [level=3] [ref=e53]
+            - paragraph [ref=e54]: Placeholder description for a core service or offering.
+        - article [ref=e55]:
+          - img "Service image placeholder" [ref=e56]:
+            - generic [ref=e57]: Image here
+          - generic [ref=e58]:
+            - heading "Service Two" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Placeholder description outlining what this service includes.
+        - article [ref=e61]:
+          - img "Service image placeholder" [ref=e62]:
+            - generic [ref=e63]: Image here
+          - generic [ref=e64]:
+            - heading "Service Three" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Placeholder description for another area of work or support.
+    - generic [ref=e68]:
+      - heading "Achievements" [level=2] [ref=e70]
+      - generic [ref=e72]:
+        - article [ref=e73]:
+          - heading "Achievements" [level=3] [ref=e74]
+          - list [ref=e75]:
+            - listitem [ref=e76]: Placeholder achievement one
+            - listitem [ref=e77]: Placeholder achievement two
+            - listitem [ref=e78]: Placeholder achievement three
+        - article [ref=e79]:
+          - heading "Programmes" [level=3] [ref=e80]
+          - list [ref=e81]:
+            - listitem [ref=e82]: Placeholder programme one
+            - listitem [ref=e83]: Placeholder programme two
+            - listitem [ref=e84]: Placeholder programme three
+        - article [ref=e85]:
+          - heading "Coaching" [level=3] [ref=e86]
+          - list [ref=e87]:
+            - listitem [ref=e88]: Placeholder coaching highlight one
+            - listitem [ref=e89]: Placeholder coaching highlight two
+            - listitem [ref=e90]: Placeholder coaching highlight three
+        - article [ref=e91]:
+          - heading "Project Management" [level=3] [ref=e92]
+          - list [ref=e93]:
+            - listitem [ref=e94]: Placeholder project management example one
+            - listitem [ref=e95]: Placeholder project management example two
+            - listitem [ref=e96]: Placeholder project management example three
+    - generic [ref=e98]:
+      - heading "Reviews" [level=2] [ref=e100]
+      - generic [ref=e102]:
+        - figure "Participant Name" [ref=e103]:
+          - blockquote [ref=e104]: Placeholder review text from a participant or customer. Short and clear feedback goes here.
+        - figure "Customer Name" [ref=e106]:
+          - blockquote [ref=e107]: Another placeholder testimonial highlighting a positive experience or outcome.
+        - figure "Client Name" [ref=e109]:
+          - blockquote [ref=e110]: A third placeholder review to show how testimonials can be presented on this page.
+    - generic [ref=e113]:
+      - heading "Pricing" [level=2] [ref=e115]
+      - generic [ref=e117]:
+        - paragraph [ref=e118]: Starting From
+        - paragraph [ref=e119]: $000
+        - paragraph [ref=e120]: Placeholder pricing details. Add a short description of what is included, session length, package scope, or other relevant information here.
+        - link "View pricing details" [ref=e121] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e123]:
+      - heading "Contact" [level=2] [ref=e125]
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - paragraph [ref=e129]: "Email: hello@example.com"
+          - paragraph [ref=e130]: "Phone: +00 000 000 000"
+          - paragraph [ref=e131]: "Location: City, Country"
+        - figure "Contact image placeholder" [ref=e132]:
+          - generic [aria-hidden] [ref=e133]: Image here
+          - generic [ref=e134]: Get in touch
+  - contentinfo [ref=e135]:
+    - generic [ref=e136]:
+      - paragraph [ref=e137]: © 2026 Grace Hayab. All rights reserved.
+      - link "Back to top" [ref=e138] [cursor=pointer]:
+        - /url: "#hero"

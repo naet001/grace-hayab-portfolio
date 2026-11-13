@@ -29,7 +29,6 @@ src/
 │   ├── Pricing.tsx
 │   ├── Contact.tsx
 │   ├── Footer.tsx
-│   └── theme-provider.tsx # Dark mode provider
 └── lib/
     └── utils.ts        # Utility functions (cn helper)
 ```
@@ -58,10 +57,9 @@ Components are placed in `src/components/ui/` and use the `@/components/ui` impo
 
 ## Styling Conventions
 - **Color System**: OKLCH color space in `src/index.css`
-- **Theme**: Dark/light mode via CSS variables
+- **Theme**: Light theme only via CSS variables
 - **Typography**: Geist Variable (sans), Recursive Variable (headings)
 - **Animations**: Use `tw-animate-css` utilities
-- **Custom Variants**: `@custom-variant dark (&:is(.dark *))`
 
 ## ESLint Configuration
 - Flat config (`eslint.config.js`)

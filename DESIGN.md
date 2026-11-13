@@ -10,7 +10,7 @@ colors:
 typography:
   display:
     fontFamily: "Recursive Variable, sans-serif"
-    fontSize: "clamp(4rem, 10vw, 8rem)"
+    fontSize: "clamp(3rem, min(14vw, 12svh), 8rem)"
     fontWeight: 650
     lineHeight: 0.86
     letterSpacing: "-0.075em"
@@ -42,7 +42,7 @@ An open, quiet portfolio for a social media manager. The design prioritizes Grac
 - **Hairline** (`#e5e5e5`): Subtle dividers and field boundaries.
 - **Signal Blue** (`#0077b6`): The brand mark, links, focus, and occasional action.
 
-In dark mode, the page uses near-black surfaces and light text with a brighter blue link/focus color. Keep saturated color limited to the brand signal.
+The site uses the light palette regardless of device color preference. Keep saturated color limited to the brand signal.
 
 ## Typography
 
@@ -61,5 +61,5 @@ The black open frame with its blue square appears once in the masthead. The blue
 ## Content and behavior
 
 - Preserve existing section copy and clearly identify unverified placeholders.
-- Keep the current light/dark theme behavior and keyboard focus visibility.
+- Keep the light-only color scheme and keyboard focus visibility.
 - The image carousel pauses on hover or focus and does not animate when reduced motion is requested.

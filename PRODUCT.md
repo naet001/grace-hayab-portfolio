@@ -25,7 +25,7 @@ Visitors review the portfolio and can navigate its existing sections before reac
 ## Capabilities and Constraints
 
 - The site uses React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
-- Preserve the existing section order, copy, functionality, responsive behavior, theme behavior, and carousel motion.
+- Preserve the existing section order, copy, functionality, responsive behavior, light-only color scheme, and carousel motion.
 - The confirmed palette is white, black, and blue `#0077b6`.
 - Current section copy and imagery are placeholders; retain them unless Grace provides replacements.
 
