@@ -533,7 +533,6 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border: 1px solid var(--border);
     padding-inline: 0.75rem;
     background: var(--background);
     color: var(--foreground);
