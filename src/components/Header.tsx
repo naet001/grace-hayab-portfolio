@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import {
   Award,
   BriefcaseBusiness,
+  ChevronDown,
   House,
   Mail,
   Menu,
@@ -13,10 +14,24 @@ import {
   X,
 } from "lucide-react"
 
-const navItems = [
+const primaryNavItems = [
+  { label: "Work", href: "#content", icon: Video },
+  { label: "Services", href: "#services", icon: BriefcaseBusiness },
+  { label: "Pricing", href: "#pricing", icon: WalletCards },
+  { label: "Contact", href: "#contact", icon: Mail },
+]
+
+const moreNavItems = [
+  { label: "Bio", href: "#bio", icon: UserRound },
+  { label: "Meet Grace", href: "#meet-grace", icon: Play },
+  { label: "Achievements", href: "#achievements", icon: Award },
+  { label: "Reviews", href: "#reviews", icon: MessageSquareText },
+]
+
+const mobileNavItems = [
   { label: "Home", href: "#hero", icon: House },
   { label: "Bio", href: "#bio", icon: UserRound },
-  { label: "Content", href: "#content", icon: Video },
+  { label: "Work", href: "#content", icon: Video },
   { label: "Meet Grace", href: "#meet-grace", icon: Play },
   { label: "Services", href: "#services", icon: BriefcaseBusiness },
   { label: "Achievements", href: "#achievements", icon: Award },
@@ -27,11 +42,13 @@ const navItems = [
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false)
   const navigationRef = useRef<HTMLDivElement>(null)
   const menuButtonRef = useRef<HTMLButtonElement>(null)
+  const moreButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
-    if (!isMobileMenuOpen) return
+    if (!isMobileMenuOpen && !isMoreMenuOpen) return
 
     const handlePointerDown = (event: PointerEvent) => {
       if (
@@ -39,13 +56,19 @@ export function Header() {
         !navigationRef.current?.contains(event.target)
       ) {
         setIsMobileMenuOpen(false)
+        setIsMoreMenuOpen(false)
       }
     }
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setIsMobileMenuOpen(false)
-        menuButtonRef.current?.focus()
+        if (isMoreMenuOpen) {
+          setIsMoreMenuOpen(false)
+          moreButtonRef.current?.focus()
+        } else if (isMobileMenuOpen) {
+          setIsMobileMenuOpen(false)
+          menuButtonRef.current?.focus()
+        }
       }
     }
 
@@ -56,7 +79,7 @@ export function Header() {
       document.removeEventListener("pointerdown", handlePointerDown)
       document.removeEventListener("keydown", handleKeyDown)
     }
-  }, [isMobileMenuOpen])
+  }, [isMobileMenuOpen, isMoreMenuOpen])
 
   return (
     <header className="editorial-header sticky top-0 z-10">
@@ -80,7 +103,10 @@ export function Header() {
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             aria-controls="primary-navigation"
-            onClick={() => setIsMobileMenuOpen((isOpen) => !isOpen)}
+            onClick={() => {
+              setIsMoreMenuOpen(false)
+              setIsMobileMenuOpen((isOpen) => !isOpen)
+            }}
           >
             {isMobileMenuOpen ? (
               <X aria-hidden="true" size={18} />
@@ -96,8 +122,57 @@ export function Header() {
             }
             aria-label="Primary"
           >
-            <ul className="flex flex-wrap gap-x-4">
-              {navItems.map((item) => (
+            <ul className="editorial-nav-desktop">
+              {primaryNavItems.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>
+                    <item.icon
+                      className="editorial-nav-icon"
+                      aria-hidden="true"
+                    />
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+              <li className="editorial-more-item">
+                <button
+                  ref={moreButtonRef}
+                  className="editorial-more-button"
+                  type="button"
+                  aria-expanded={isMoreMenuOpen}
+                  aria-controls="more-navigation"
+                  onClick={() => setIsMoreMenuOpen((isOpen) => !isOpen)}
+                >
+                  More
+                  <ChevronDown
+                    className="editorial-nav-icon editorial-more-chevron"
+                    aria-hidden="true"
+                  />
+                </button>
+                <ul
+                  id="more-navigation"
+                  className="editorial-more-menu"
+                  hidden={!isMoreMenuOpen}
+                >
+                  {moreNavItems.map((item) => (
+                    <li key={item.href}>
+                      <a
+                        href={item.href}
+                        onClick={() => setIsMoreMenuOpen(false)}
+                      >
+                        <item.icon
+                          className="editorial-nav-icon"
+                          aria-hidden="true"
+                        />
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            </ul>
+            <ul className="editorial-nav-mobile">
+              {mobileNavItems.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
