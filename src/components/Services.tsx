@@ -1,4 +1,9 @@
 import { Section } from "@/components/Section"
+import {
+  placeholderVideoPoster,
+  placeholderVideoSrc,
+  VideoSlot,
+} from "@/components/VideoSlot"
 
 const services = [
   {
@@ -35,6 +40,23 @@ export function Services() {
             </div>
           </article>
         ))}
+        <article className="editorial-service">
+          <div className="editorial-service-art">
+            <VideoSlot
+              title="Meet Grace"
+              variant="content"
+              src={placeholderVideoSrc}
+              poster={placeholderVideoPoster}
+            />
+          </div>
+          <div className="editorial-row-copy">
+            <h3>Meet Grace</h3>
+            <p>
+              Three-second placeholder video. Replace with Grace&apos;s
+              introduction.
+            </p>
+          </div>
+        </article>
       </div>
     </Section>
   )

@@ -6,6 +6,7 @@ import {
   Mail,
   Menu,
   MessageSquareText,
+  Video,
   UserRound,
   WalletCards,
   X,
@@ -14,6 +15,7 @@ import {
 const navItems = [
   { label: "Home", href: "#hero", icon: House },
   { label: "Bio", href: "#bio", icon: UserRound },
+  { label: "Content", href: "#content", icon: Video },
   { label: "Services", href: "#services", icon: BriefcaseBusiness },
   { label: "Achievements", href: "#achievements", icon: Award },
   { label: "Reviews", href: "#reviews", icon: MessageSquareText },
@@ -87,7 +89,9 @@ export function Header() {
           </button>
           <nav
             id="primary-navigation"
-            className={`editorial-nav${isMobileMenuOpen ? "is-open" : ""}`}
+            className={
+              isMobileMenuOpen ? "editorial-nav is-open" : "editorial-nav"
+            }
             aria-label="Primary"
           >
             <ul className="flex flex-wrap gap-x-4">

@@ -1,10 +1,10 @@
 import { Achievements } from "@/components/Achievements"
 import { Bio } from "@/components/Bio"
 import { Contact } from "@/components/Contact"
+import { ContentShowcase } from "@/components/ContentShowcase"
 import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
-import { ImageCarousel } from "@/components/ImageCarousel"
 import { Pricing } from "@/components/Pricing"
 import { Reviews } from "@/components/Reviews"
 import { Services } from "@/components/Services"
@@ -16,7 +16,7 @@ export function App() {
       <main>
         <Hero />
         <Bio />
-        <ImageCarousel />
+        <ContentShowcase />
         <Services />
         <Achievements />
         <Reviews />
