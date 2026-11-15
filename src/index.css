@@ -381,6 +381,11 @@
   text-transform: uppercase;
 }
 
+.editorial-intro-video {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
 .editorial-video-slot {
   position: relative;
   width: 100%;

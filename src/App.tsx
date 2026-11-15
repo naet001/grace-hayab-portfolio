@@ -5,6 +5,7 @@ import { ContentShowcase } from "@/components/ContentShowcase"
 import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
+import { IntroductionVideo } from "@/components/IntroductionVideo"
 import { Pricing } from "@/components/Pricing"
 import { Reviews } from "@/components/Reviews"
 import { Services } from "@/components/Services"
@@ -17,6 +18,7 @@ export function App() {
         <Hero />
         <Bio />
         <ContentShowcase />
+        <IntroductionVideo />
         <Services />
         <Achievements />
         <Reviews />
