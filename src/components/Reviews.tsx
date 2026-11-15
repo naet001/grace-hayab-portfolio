@@ -1,4 +1,5 @@
 import { Section } from "@/components/Section"
+import { Quote, UserRound } from "lucide-react"
 
 const reviews = [
   {
@@ -24,8 +25,20 @@ export function Reviews() {
       <div className="editorial-reviews">
         {reviews.map((review) => (
           <figure key={review.name} className="editorial-review">
-            <blockquote>{review.quote}</blockquote>
-            <figcaption>{review.name}</figcaption>
+            <blockquote className="editorial-review-quote">
+              <Quote
+                className="editorial-review-quote-icon"
+                aria-hidden="true"
+              />
+              <span>{review.quote}</span>
+            </blockquote>
+            <figcaption className="editorial-reviewer">
+              <UserRound
+                className="editorial-reviewer-icon"
+                aria-hidden="true"
+              />
+              {review.name}
+            </figcaption>
           </figure>
         ))}
       </div>

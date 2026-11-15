@@ -1,14 +1,24 @@
 import { useEffect, useRef, useState } from "react"
-import { Menu, X } from "lucide-react"
+import {
+  Award,
+  BriefcaseBusiness,
+  House,
+  Mail,
+  Menu,
+  MessageSquareText,
+  UserRound,
+  WalletCards,
+  X,
+} from "lucide-react"
 
 const navItems = [
-  { label: "Home", href: "#hero" },
-  { label: "Bio", href: "#bio" },
-  { label: "Services", href: "#services" },
-  { label: "Achievements", href: "#achievements" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "#hero", icon: House },
+  { label: "Bio", href: "#bio", icon: UserRound },
+  { label: "Services", href: "#services", icon: BriefcaseBusiness },
+  { label: "Achievements", href: "#achievements", icon: Award },
+  { label: "Reviews", href: "#reviews", icon: MessageSquareText },
+  { label: "Pricing", href: "#pricing", icon: WalletCards },
+  { label: "Contact", href: "#contact", icon: Mail },
 ]
 
 export function Header() {
@@ -77,7 +87,7 @@ export function Header() {
           </button>
           <nav
             id="primary-navigation"
-            className={`editorial-nav${isMobileMenuOpen ? " is-open" : ""}`}
+            className={`editorial-nav${isMobileMenuOpen ? "is-open" : ""}`}
             aria-label="Primary"
           >
             <ul className="flex flex-wrap gap-x-4">
@@ -87,6 +97,10 @@ export function Header() {
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
+                    <item.icon
+                      className="editorial-nav-icon"
+                      aria-hidden="true"
+                    />
                     {item.label}
                   </a>
                 </li>

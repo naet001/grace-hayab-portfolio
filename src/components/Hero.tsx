@@ -1,3 +1,5 @@
+import { Megaphone } from "lucide-react"
+
 export function Hero() {
   return (
     <section id="hero" className="editorial-hero scroll-mt-24 px-6">
@@ -6,7 +8,10 @@ export function Hero() {
           <h1>
             Grace <span>Hayab</span>
           </h1>
-          <p className="editorial-role">Social Media Manager</p>
+          <p className="editorial-role">
+            <Megaphone className="editorial-role-icon" aria-hidden="true" />
+            Social Media Manager
+          </p>
           <p>
             A short introduction goes here. This is a placeholder hero section
             for a clear, minimal personal portfolio.
